@@ -71,6 +71,10 @@ const gameOver = () => {
 
   // show result modal
   resultModal.innerHTML = "";
+  //result modal position centralized
+  resultModal.style.top = "50%";
+  resultModal.style.left = "50%";
+  
   resultModal.classList.toggle("hidden");
   modalBackground.classList.toggle("hidden");
   // clear user text
