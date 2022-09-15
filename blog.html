@@ -61,15 +61,40 @@
     <h1 class="header">Blogs</h1>
     <div class="container">
         <div class="blog">
-            <button type="button" class="collapsible">Open Collapsible</button>
+            <button type="button" class="collapsible">1. What is difference between local storage and session storage?</button>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+               <p>
+                <strong>Local Storage:</strong> <br>
+                Stores data in browser without any expiration date. Saves data in key/value pairs in the browser. Data is not deleted when the browser is closed. Data is available for future sessions. The storage capacity of local storage is 5MB/10MB.</p><br>
+                <p><strong>Session Storage:</strong> <br>
+                Stores data in browser for a session. Saves data in key/value pairs in the browser. Data is deleted when the browser is closed. Data is not available for future sessions. The storage capacity of session storage is 5MB.</p>
+                
+            </div>
+        </div>
+        <div class="blog">
+            <button type="button" class="collapsible">2. What is difference between global scope and block scope?</button>
+            <div class="content">
+                JavaScript variables have only two scopes.
+               <p>
+                <strong>Global scope:</strong> <br>
+                Global scope contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block.
+                <pre>
+                
+                let variableName = "A string"; //global scope
+                </pre>
+                </p><br>
+                <p><strong>Local Scope:</strong> <br>
+                A local variable will be visible only within a function where it is defined. Function parameters are always local to that function. Local scope contains things defined inside code blocks.</p>
+                <pre>
+                
+                if (condition) {
+                    let variableName = "A string"; //local scope
+                    }
+                </pre>
             </div>
         </div>
     </div>
-    
+
     <script src="blog.js"></script>
 </body>
 
